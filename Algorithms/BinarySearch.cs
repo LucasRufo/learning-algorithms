@@ -1,6 +1,6 @@
 ﻿namespace Algorithms;
 
-public class BinarySearch
+public static class BinarySearch
 {
     public static int? BinarySearchAlgorithm(int[] array, int itemToFind)
     {
