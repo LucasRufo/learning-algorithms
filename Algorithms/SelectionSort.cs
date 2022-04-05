@@ -15,15 +15,15 @@ public static class SelectionSort
 
         for (int i = 0; i < len; i++)
         {
-            var maxIndex = FindMaxValueIndex(list);
-            newList.Add(list[maxIndex]);
-            list.RemoveAt(maxIndex);
+            var minIndex = FindMinValueIndex(list);
+            newList.Add(list[minIndex]);
+            list.RemoveAt(minIndex);
         }
 
         return newList;
     }
 
-    private static int FindMaxValueIndex(List<int> list)
+    private static int FindMinValueIndex(List<int> list)
     {
         var minValueIndex = 0;
         var minValue = list[0];
